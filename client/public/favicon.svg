@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Orange rounded background -->
+  <rect width="64" height="64" rx="14" fill="#f97316"/>
+
+  <!-- Fork (left) -->
+  <g fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Fork handle -->
+    <line x1="18" y1="44" x2="18" y2="34"/>
+    <!-- Fork neck -->
+    <line x1="18" y1="34" x2="18" y2="28"/>
+    <!-- Fork tines -->
+    <line x1="14" y1="20" x2="14" y2="27"/>
+    <line x1="18" y1="20" x2="18" y2="27"/>
+    <line x1="22" y1="20" x2="22" y2="27"/>
+    <!-- Fork tine base curve -->
+    <path d="M14 27 Q14 30 18 30 Q22 30 22 27"/>
+  </g>
+
+  <!-- Knife (right) -->
+  <g fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Knife handle -->
+    <line x1="46" y1="44" x2="46" y2="32"/>
+    <!-- Knife blade -->
+    <path d="M46 32 Q50 28 50 20 Q46 22 44 26 Q42 30 46 32"/>
+  </g>
+
+  <!-- Plate / bowl circle in center -->
+  <circle cx="32" cy="34" r="9" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="32" cy="34" r="4" fill="#ffffff" opacity="0.3"/>
+</svg>

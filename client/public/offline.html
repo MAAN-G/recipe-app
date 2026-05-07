@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're Offline — RecipeBox</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --primary: #f97316; --bg: #ffffff; --fg: #1c1917; --muted: #78716c; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1c1917; --fg: #fafaf9; --muted: #a8a29e; }
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100dvh;
+      padding: 1.5rem;
+      text-align: center;
+      gap: 1rem;
+    }
+    .icon { font-size: 5rem; line-height: 1; }
+    h1 { font-size: 1.75rem; font-weight: 700; }
+    p { color: var(--muted); max-width: 30ch; line-height: 1.6; }
+    a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.625rem 1.25rem;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    a:hover { opacity: 0.9; }
+    a:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <div class="icon" aria-hidden="true">📡</div>
+  <h1>You're offline</h1>
+  <p>No internet connection detected. Your saved favorites are still accessible.</p>
+  <a href="/favorites">View Saved Favorites</a>
+  <a href="/" style="background: transparent; color: var(--primary); border: 1px solid var(--primary);">Try Again</a>
+</body>
+</html>
