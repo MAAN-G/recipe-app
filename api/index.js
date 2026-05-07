@@ -11,6 +11,7 @@
  *   CLIENT_ORIGIN    — https://your-app.vercel.app
  */
 
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
