@@ -4,9 +4,6 @@
   "outputDirectory": "client/dist",
   "installCommand": "npm install --prefix server && npm install --prefix client",
   "framework": null,
-  "functions": {
-    "api/index.js": {}
-  },
   "rewrites": [
     {
       "source": "/api/(.*)",
